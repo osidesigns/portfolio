@@ -1,0 +1,164 @@
+/* Base Styles */
+:root{
+    --primaryColor: rgb(236, 65, 65);
+}
+
+html{
+    font-size: 10px;
+}
+
+body,
+h1,h2,h3{
+    margin: 0;
+    padding: 0;
+}
+
+body{ font-size: 1.6rem; font-family: 'Open Sans', Arial, sans-serif;}
+
+div{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+
+/* Header Starts Here */
+#headerWrapper{
+    background: url('https://uploads-ssl.webflow.com/5e83abddf847f46973667198/5ea82806c81001d0abdf94b0_typing-student-small.jpg') no-repeat center center/cover;
+    height: 650px;
+}
+
+#topbar{
+    background-color: rgba(0, 0, 0, .3);
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+#topbar{
+    padding: 1rem 0;
+}
+
+#topbar header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#topbar a{
+    color: #fff;
+    padding: 1rem;
+}
+
+#topbar a:hover{
+    background-color: #fff;
+    color: #2d2d2d;
+    padding: 1rem;
+}
+
+#branding{
+    font-size: 2.5rem;
+}
+
+#branding span{
+    color: var(--primaryColor);
+}
+
+#mobileNav{
+    padding: .5rem;
+}
+
+#mobileNav .bar{
+    border: 1px solid #fff;
+    margin-top: .5rem;
+    width: 2.5rem;
+}
+
+#mobileNav .bar:first-child{
+    margin-top: 0;
+}
+
+#heroArea{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#heroArea h1{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 300;
+    margin-top: -15rem;
+    margin-bottom: 0;
+    text-shadow: 2px 2px 3px #000;
+}
+
+#heroArea h1 span.part1{
+    color: #2d2d2d;
+    font-size: 6rem;
+    text-shadow: 2px 2px 1px #2d2d2d;
+}
+
+#heroArea h1 span.part2{
+    color: var(--primaryColor);
+    font-size: 6rem;
+    text-shadow: none;
+    text-shadow: 2px 2px 1px #2d2d2d;
+}
+
+#heroArea p{
+    margin: 0;
+    color: #fff;
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 3px #000;
+    letter-spacing: .3rem;
+}
+/* Header Ends Here */
+
+
+/* Footer Starts Here */
+footer hr{
+    margin-top: 1rem;
+    width: 50rem;
+    border-top: .2rem solid#2d2d2d;
+}
+
+
+
+footer p{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+footer p span{
+    color: var(--primaryColor);
+}
+
+@media(max-width: 592px){
+    #mainNav{
+        display: none;
+    }
+}
+
+@media(min-width: 592px){
+    #mobileNav{display: none;}
+    #mainNav ul{
+        display: flex;
+        list-style: none;
+    }
+    
+    #mainNav li a{
+        text-decoration: none;
+    }
+}
