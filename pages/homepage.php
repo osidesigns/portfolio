@@ -33,7 +33,7 @@
     <div>
         <h1 class="white text-center">My <span class="primary">Enthusiasm</span> For Web Development</h1>
         <h3 class="white text-center">I Enjoy Solving Problems <span class="primary">Using</span> Technology</h3>
-        <p class="white text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit tempore magnam recusandae explicabo commodi distinctio iusto fugiat eaque nulla est vitae quas minus accusantium adipisci vel suscipit repellat laudantium, esse sunt repudiandae quisquam officiis!</p>
+        <p class="grey-text text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit tempore magnam recusandae explicabo commodi distinctio iusto fugiat eaque nulla est vitae quas minus accusantium adipisci vel suscipit repellat laudantium, esse sunt repudiandae quisquam officiis!</p>
         <button class="outline-primary center">Contact Me</button>
     </div>
 </div>

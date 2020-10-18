@@ -4,6 +4,7 @@
     --colorTrim: #da1a1a;
     --neutralDark: #2d2d2d;
     --neutralLight: #fff;
+    --greytext: #d4d4d4;
 }
 
 html{
@@ -14,6 +15,12 @@ body,
 h1,h2,h3{
     margin: 0;
     padding: 0;
+}
+body{ 
+    font-size: 1.6rem;
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: #232323;
+    box-sizing: border-box;
 }
 
 h1{
@@ -55,7 +62,6 @@ p{
     line-height: 2.8rem;
 }
 
-body{ font-size: 1.6rem; font-family: 'Open Sans', Arial, sans-serif; background-color: #232323;}
 
 div{
     box-sizing: border-box;
@@ -71,6 +77,10 @@ div{
 
 .text-center{
     text-align: center;
+}
+
+.grey-text{
+    color: var(--greytext);
 }
 
 .primary{
@@ -260,7 +270,7 @@ div{
 /* Footer Starts Here */
 footer hr{
     margin-top: 1rem;
-    width: 50rem;
+    width: 85%;
     border-top: .2rem solid#2d2d2d;
 }
 
