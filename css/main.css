@@ -28,11 +28,17 @@ h2{
     margin: 1.5rem 0;
 }
 
+h3{
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 1.5rem 0;
+}
+
 button{
     display: block;
     font-weight: 300;
     text-transform: uppercase;
-    letter-spacing: .3rem;
+    letter-spacing: .2rem;
     background-color: transparent;
     transition: background-color 0.5s ease-in;
 }
@@ -203,11 +209,11 @@ div{
     font-weight: 300;
     background-color:var(--primaryColor);
     border: 1px solid var(--colorTrim);
+    margin: 0;
     padding: 1.5rem;
     color: #fff;
     text-align: center;
     text-transform: uppercase;
-
 }
 
 .quickInfoCol img{
