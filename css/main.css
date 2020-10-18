@@ -1,6 +1,9 @@
 /* Base Styles */
 :root{
     --primaryColor: rgb(236, 65, 65);
+    --colorTrim: #da1a1a;
+    --neutralDark: #2d2d2d;
+    --neutralLight: #fff;
 }
 
 html{
@@ -13,7 +16,40 @@ h1,h2,h3{
     padding: 0;
 }
 
-body{ font-size: 1.6rem; font-family: 'Open Sans', Arial, sans-serif;}
+h1{
+    font-size: 4rem;
+    font-weight: 300;
+    margin: 1.5rem 0;
+}
+
+h2{
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 1.5rem 0;
+}
+
+button{
+    display: block;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    background-color: transparent;
+    transition: background-color 0.5s ease-in;
+}
+
+button:hover{
+    background-color: var(--primaryColor);
+}
+
+.center{
+    margin: 0 auto;
+}
+
+p{
+    line-height: 2.8rem;
+}
+
+body{ font-size: 1.6rem; font-family: 'Open Sans', Arial, sans-serif; background-color: #232323;}
 
 div{
     box-sizing: border-box;
@@ -27,8 +63,27 @@ div{
     padding: 0 1.5rem;
 }
 
+.text-center{
+    text-align: center;
+}
+
+.primary{
+    color: var(--primaryColor);
+}
+
+.white{
+    color: var(--neutralLight);
+}
+
 .pnone{
     padding: 0;
+}
+
+.outline-primary{
+    border: 1px solid var(--primaryColor);
+    color: var(--neutralLight);
+    padding: 1rem 3rem;
+    margin: 2rem auto;
 }
 
 
@@ -36,11 +91,12 @@ div{
 #headerWrapper{
     background: url('https://uploads-ssl.webflow.com/5e83abddf847f46973667198/5ea82806c81001d0abdf94b0_typing-student-small.jpg') no-repeat center center/cover;
     height: 650px;
+    box-shadow: 0 4px 5px -2px gray;
 }
 
 #topbar{
     background-color: rgba(0, 0, 0, .3);
-    color: #fff;
+    color: var(--neutralLight);
     text-transform: uppercase;
 }
 
@@ -56,13 +112,13 @@ div{
 }
 
 #topbar a{
-    color: #fff;
+    color: var(--neutralLight);
     padding: 1rem;
 }
 
 #topbar a:hover{
-    background-color: #fff;
-    color: #2d2d2d;
+    background-color: var(--primaryColor);
+    color:  var(--neutralLight);
     padding: 1rem;
 }
 
@@ -79,7 +135,7 @@ div{
 }
 
 #mobileNav .bar{
-    border: 1px solid #fff;
+    border: 1px solid var(--neutralLight);
     margin-top: .5rem;
     width: 2.5rem;
 }
@@ -132,10 +188,11 @@ div{
 /* Quick Info Section */
 #quickInfo{
     display: flex;
+    flex-direction: column;
     border: 1px solid var(--primaryColor);
     background-color: #fff;
     min-height: 220px;
-    margin-top: -12rem;
+    margin: -15rem 0 3rem 0;
 }
 
 .quickInfoCol{
@@ -145,7 +202,7 @@ div{
 .quickInfoCol h3{
     font-weight: 300;
     background-color:var(--primaryColor);
-    border: 1px solid #da1a1a;
+    border: 1px solid var(--colorTrim);
     padding: 1.5rem;
     color: #fff;
     text-align: center;
@@ -154,7 +211,8 @@ div{
 }
 
 .quickInfoCol img{
-    border: .1rem solid #2d2d2d;
+    align-self: center;
+    border: .3rem solid var(--neutralDark);
     border-radius: 50%;
     float: left;
     margin: 1.5rem;
@@ -171,14 +229,20 @@ div{
 .quickInfoCol li a{
     text-decoration: none;
     text-transform: capitalize;
-    color: var(--primaryColor);
+    color: var(--neutralDark);
+}
 
+.quickInfoCol li a:hover{
+    text-decoration: underline;
 }
 
 .quickInfoCol li a > i{
     margin-right: .5rem;
     font-size: 2rem;
-    color: #333;
+    color: #fff;
+    border-radius: 3px;
+    background-color: var(--primaryColor);
+    padding: .5rem .7rem;
 }
 
 .dualList{
@@ -197,6 +261,7 @@ footer hr{
 
 
 footer p{
+    color: var(--neutralLight);
     font-size: 1.2rem;
     text-transform: uppercase;
     text-align: center;
@@ -221,5 +286,10 @@ footer p span{
     
     #mainNav li a{
         text-decoration: none;
+    }
+
+    #quickInfo{
+        display: flex;
+        flex-direction: row;
     }
 }
