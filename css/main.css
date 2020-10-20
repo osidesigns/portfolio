@@ -75,6 +75,14 @@ div{
     padding: 0 1.5rem;
 }
 
+.greyCtnBkg{
+    background-color: #303030;
+}
+
+.redCtnBkg{
+    background-color: var(--primaryColor);
+}
+
 .text-center{
     text-align: center;
 }
@@ -94,6 +102,14 @@ div{
 .pnone{
     padding: 0;
 }
+
+.mb-1{margin: 0 0 1rem;}
+.mt-5{margin-top: 5rem;}
+.mb-5{margin-bottom: 5rem;}
+.my-5{margin: 5rem 0;}
+
+.p-1{padding: 1.5rem;}
+.py-3{padding: 3rem 0;}
 
 .outline-primary{
     border: 1px solid var(--primaryColor);
@@ -252,7 +268,8 @@ div{
     text-decoration: underline;
 }
 
-.quickInfoCol li a > i{
+.quickInfoCol li a > i,
+.workcard li > i{
     margin-right: .5rem;
     font-size: 2rem;
     color: #fff;
@@ -264,6 +281,47 @@ div{
 .dualList{
     display: flex;
     justify-content: space-around;
+}
+
+#works{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.workcard{
+    background-color: var(--neutralLight);
+    border: 2px solid #2d2d2d;
+    padding: 0;
+    margin: 0;
+    width: 275px;
+    overflow: hidden;
+    align-items: center;
+    margin: 0 auto 1.5rem;
+}
+
+.wprkcard img{
+    width: 100%;
+}
+
+.workcard h3{
+    margin: -.5rem;
+}
+
+.workcard ul{
+    list-style: none;
+    color: var(--neutralDark);
+    margin: 0;
+    padding:1.5rem 0 1.5rem 2rem;
+}
+
+.workcard li a{
+    text-decoration: none;
+    color: var(--neutralDark);
+}
+
+.workcard li a:hover{
+    color: var(--primaryColor);
 }
 
 
@@ -293,6 +351,7 @@ footer p span{
     }
 }
 
+
 @media(min-width: 592px){
     #mobileNav{display: none;}
     #mainNav ul{
@@ -303,9 +362,28 @@ footer p span{
     #mainNav li a{
         text-decoration: none;
     }
-
+    
     #quickInfo{
         display: flex;
         flex-direction: row;
+    }
+}
+
+ @media(min-width: 767px){
+    #works{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .workcard{
+        background-color: var(--neutralLight);
+        border: 2px solid #2d2d2d;
+        padding: 0;
+        margin: 0;
+        width: 275px;
+        overflow: hidden;
+        align-items: center;
+        margin: 0 auto;
     }
 }

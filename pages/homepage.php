@@ -37,3 +37,50 @@
         <button class="outline-primary center">Contact Me</button>
     </div>
 </div>
+<div id="recentworks" class="greyCtnBkg py-3 mt-5">
+    <div class="container">
+        <h2 class="white text-center">Recent <span class="primary">Works</span></h2>
+        <div id="works">
+            <div class="workcard">
+                <img src="https://source.unsplash.com/random/275x175" alt="working" />
+                <h3 class="white text-center p-1 redCtnBkg">Web App</h3>
+                <ul>
+                    <li class="mb-1"><i class="fa fa-globe"></i><a href="#">www.example.com</a></li>
+                    <li class="mb-1"><i class="fa fa-calendar"></i>September 12, 2020</li>
+                    <li class="mb-1"><i class="fa fa-user"></i>Ref: John Doe</li>
+                </ul>
+            </div>
+            <div class="workcard">
+                <img src="https://source.unsplash.com/random/275x175" alt="working" />
+                <h3 class="white text-center p-1 redCtnBkg">Mobile App</h3>
+                <ul>
+                    <li class="mb-1"><i class="fa fa-globe"></i><a href="#">www.google.com</a></li>
+                    <li class="mb-1"><i class="fa fa-calendar"></i>May 30, 2020</li>
+                    <li class="mb-1"><i class="fa fa-user"></i>Ref: Joann Mays</li>
+                </ul>
+            </div>
+            <div class="workcard">
+                <img src="https://source.unsplash.com/random/275x175" alt="working" />
+                <h3 class="white text-center p-1 redCtnBkg">Personal Project</h3>
+                <ul>
+                    <li class="mb-1"><i class="fa fa-globe"></i><a href="#">www.yahoo.com</a></li>
+                    <li class="mb-1"><i class="fa fa-calendar"></i>March 1, 2020</li>
+                    <li class="mb-1"><i class="fa fa-user"></i>Ref: John Smith</li>
+                </ul>
+            </div>
+            <div class="workcard">
+                <img src="https://source.unsplash.com/random/275x175" alt="working" />
+                <h3 class="white text-center p-1 redCtnBkg">Web App</h3>
+                <ul>
+                    <li class="mb-1"><i class="fa fa-globe"></i><a href="#">www.msn.com</a></li>
+                    <li class="mb-1"><i class="fa fa-calendar"></i>January 12, 2020</li>
+                    <li class="mb-1"><i class="fa fa-user"></i>Ref: Tedd Moore</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="testimonials" class="redCtnBkg py-3">
+
+</div>
